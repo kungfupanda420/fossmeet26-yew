@@ -1,27 +1,19 @@
-# Trunk.toml - Configuration for Trunk (Rust WASM bundler)
+# Trunk.toml
 
 [build]
-# The index HTML file to process
 target = "index.html"
-# Output directory for the build
 dist = "dist"
 release = true
-wasm-opt = "version_125"
+wasm-opt = false
 
 [watch]
-# Directories to watch for changes
 watch = ["src", "styles", "assets", "index.html"]
-# Files to ignore
 ignore = ["dist"]
 
 [serve]
-# Address to serve on
 address = "127.0.0.1"
-# Port to serve on
 port = 8080
-# Open browser automatically
 open = false
-# Enable hot-reload
 ws_protocol = "ws"
 
 [[hooks]]
@@ -29,6 +21,3 @@ stage = "build"
 command = "sh"
 command_arguments = ["-c", "echo 'Building FOSSMeet 26 WASM app...'"]
 
-[tools]
-# Use wasm-opt for production builds
-wasm_opt = "z"
