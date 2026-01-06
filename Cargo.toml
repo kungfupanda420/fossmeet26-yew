@@ -46,6 +46,7 @@ log = "0.4"
 wasm-logger = "0.2"
 rand = { version = "0.8", features = ["small_rng"] }
 getrandom = { version = "0.2", features = ["js"] }
+wasm-opt = false
 
 [profile.release]
 lto = true
