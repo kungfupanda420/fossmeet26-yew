@@ -1,0 +1,26 @@
+# Build output
+/dist
+/target
+
+# Dependencies
+/pkg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trunk
+.trunk/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#1A1A1A"/>
+  <circle cx="150" cy="120" r="50" fill="#2A2A2A"/>
+  <path d="M75 280 Q75 200 150 200 Q225 200 225 280" fill="#2A2A2A"/>
+  <text x="150" y="170" text-anchor="middle" fill="#FF6B00" font-family="monospace" font-size="12">Speaker</text>
+</svg>
