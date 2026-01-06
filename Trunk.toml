@@ -5,6 +5,8 @@
 target = "index.html"
 # Output directory for the build
 dist = "dist"
+release = true
+wasm-opt = "version_125"
 
 [watch]
 # Directories to watch for changes
