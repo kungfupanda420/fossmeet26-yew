@@ -13,6 +13,9 @@ pub fn navbar(props: &NavbarProps) -> Html {
     let is_mobile_menu_open = use_state(|| false);
     let route = use_route::<Route>();
     
+    // The FOSSCell GitHub URL
+    let github_url = "https://github.com/fosscell";
+    
     let toggle_menu = {
         let is_open = is_mobile_menu_open.clone();
         Callback::from(move |_| {
@@ -58,7 +61,8 @@ pub fn navbar(props: &NavbarProps) -> Html {
                                 </Link<Route>>
                             }
                         })}
-                        <a href="https://github.com/fosscell" 
+                        // Reverted to GitHub
+                        <a href={github_url} 
                            target="_blank" 
                            rel="noopener noreferrer"
                            class="navbar-link">
@@ -70,7 +74,6 @@ pub fn navbar(props: &NavbarProps) -> Html {
                     <button 
                         class={classes!("navbar-toggle", (*is_mobile_menu_open).then_some("open"))}
                         onclick={toggle_menu}
-                        aria-label="Toggle navigation menu"
                     >
                         <span></span>
                         <span></span>
@@ -94,7 +97,7 @@ pub fn navbar(props: &NavbarProps) -> Html {
                         </div>
                     }
                 })}
-                <a href="https://github.com/fosscell" 
+                <a href={github_url} 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="mobile-menu-link"
