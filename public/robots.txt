@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Allow: /speakers
+Allow: /workshops
+Allow: /schedule
+
+Disallow: /assets/
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.wasm$
+Disallow: /_trunk/
+Disallow: /dist/
+
+Sitemap: https://www.fossmeet.org/sitemap.xml
